@@ -15,70 +15,60 @@ body {
   margin: auto;
   width: 100%;
 }
-
 header {
 	padding-top: 1%;
 }
-
 header a:hover {
 	color: green;
 	-webkit-transition: all 500ms;
 }
-
 a {
 	text-decoration: none;
 }
-
 a.sologram {
 	font-size: 35px;
 	padding: 2%;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: bold;
+  color: #685170;
 }
-
 a.sign {
 	padding: 1%;
 	float: right;
 	margin-right: 1%;
 	font-size: 16px;
 	font-weight: bold;
+  color: #685170;
 }
-
 .center2 {
 	padding-top: 1%;
 	width: 100%;
 }
-
 .middle {
 	margin-top: -4em;
 }
-
 .deskmobile {
 	width: 50%;
 	float: left;
 }
-
 .content {
 	float: right;
 	padding-right: 6%;
 	margin-top: 7%;
 	margin-left: 2%;
 	width: 48%;
-	font-size: 14px;
+	font-size: 15px;
 	color: #5C5C5C;
 }
-
 .content li:hover {
 	color: green;
 	font-weight: bold;
 	-webkit-transition: all 400ms;
 }
-
 li {
 	line-height: 2;
 	list-style: none;
 }
-
 footer {
 	position: relative;
 	text-align: center;
@@ -90,11 +80,9 @@ footer {
 	height: 3em;
 	margin-top: 50em;
 }
-
 footer a {
 	color: inherit;
 }
-
 footer a:hover {
 	color: green;
 	font-weight: bold;
@@ -110,7 +98,6 @@ footer a:hover {
   background-color: #2e4a88;
   box-shadow: 0 4px 0 #1B3D82;
   text-shadow: 0 -1px -1px #1B3D82;
-  
   display: inline;
   position: relative;
   font-family: Arial;
@@ -132,7 +119,6 @@ footer a:hover {
 .twttr {
   background-color: #008DDE;
   box-shadow: 0 4px 0 #0078BD;
-  
   display: inline;
   position: relative;
   font-family: Arial;
@@ -154,7 +140,6 @@ footer a:hover {
 .ggl {
   background-color: #CC3622;
   box-shadow: 0 4px 0 #BA2714;
-  
   display: inline;
   position: relative;
   font-family: Arial;
@@ -212,3 +197,89 @@ ul.social-buttons img {
 .youtube span.image    {background-position: -96px 0;}
 .vimeo span.image      {background-position: -128px 0;}
 .pinterest span.image  {background-position: -160px 0;}
+
+/*Media Queries*/
+@media (min-width: 769px) and (max-width: 1000px) {
+  .ggl {
+    display: inline-block;
+  }
+}
+@media (max-width: 865px) {
+  .ggl {
+    display: inline-block;
+    margin-top: 25px;
+    }
+}
+@media (max-width: 768px) {
+  .center2 {
+    height: 175px;
+  }  
+  .ggl {
+    display: inline-block;
+    margin-top: 25px;
+  }
+  .social-buttons {
+    margin: -10em 27em 0 0;
+    width: 51%;
+  }
+  footer {
+    margin: 1em 2em; 
+  }
+}
+@media (max-width: 577px) {
+  .center2 {
+    height: 200px;
+  }
+  .fb, .twttr, .ggl {
+    display: inline-block;
+    margin: 10px;
+  }
+  .fb {
+    margin-top: -2em;
+  }
+  .deskmobile {
+    width: 100%;
+    margin: -3em 0 0 -5em;
+  }
+  .content {
+    margin-top: -7%;
+    padding-right: 1em;
+    width: 98%;
+  }
+  .content li:hover {
+    color: green;
+    -webkit-transition: all 400ms;
+  }
+  .social-buttons {
+    float: left;
+    padding: 0 0 0 10px; 
+    width: 100%;
+    top: 12em;
+    left: initial;
+  }
+  footer {
+    margin-top: 70em;
+  }
+}
+@media (max-width: 320px) {
+  .sologram {
+    margin-left: 2em;
+  }
+  .sign {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .center2 {
+    margin-top: 1em;
+  }
+  .deskmobile {
+    width: 100%;
+    margin: -2em 0 0 -3em;
+  }
+  .fb {
+    margin-top: -2em;
+  }
+  .content {
+    width: 95%;
+  }
+}
