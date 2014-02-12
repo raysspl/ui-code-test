@@ -5,115 +5,210 @@
 }
 
 body {
-  color: #000;
   font-size: 12px;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.4;
+  height: 100%;
+  margin: 2% 0;
 }
 #container {
   margin: auto;
   width: 100%;
 }
-#container a {
+
+header {
+	padding-top: 1%;
+}
+
+header a:hover {
+	color: green;
+	-webkit-transition: all 500ms;
+}
+
+a {
 	text-decoration: none;
-	color: #3E234F;
-	margin: 15px 20px 0 0;
-	display: block;
-	float: left;
-	font-size: 14px;
+}
+
+a.sologram {
+	font-size: 35px;
+	padding: 2%;
+	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: bold;
 }
-#container .sologram {
-	display: block;
-	font-size: 35px;
-	padding: 30px 0;
-	margin-left: 50px;
-	text-decoration: none;
-	position: relative;
-	float: left;
-	font-stretch: narrower;
-}
-#container .sign2 {
-	padding: 45px 25px 0 0;
+
+a.sign {
+	padding: 1%;
 	float: right;
-	position: relative;
+	margin-right: 1%;
+	font-size: 16px;
+	font-weight: bold;
 }
-#container .sign1 {
-	padding: 45px 0;
-	float: left;
-	position: relative;
-}
-img {
+
+.center2 {
+	padding-top: 1%;
 	width: 100%;
 }
-img .deskmobile {
-	image-rendering: auto;
-	width: 100%;
-	margin-top: -30px;
-	overflow: hidden;
+
+.middle {
+	margin-top: -4em;
 }
-.image {
-	position: relative;
+
+.deskmobile {
+	width: 50%;
+	float: left;
 }
-.content p {
-	overflow: hidden;
-	position: absolute;
-	top: 90px;
-	left: 640px;
-	width: 400px;
+
+.content {
 	float: right;
+	padding-right: 6%;
+	margin-top: 7%;
+	margin-left: 2%;
+	width: 48%;
 	font-size: 14px;
+	color: #5C5C5C;
 }
-.content ul {
-	position: absolute;
-	top: 170px;
-	left: 660px;
-	width: 410px;
-	float: right;
-	font-size: 14px;
-	line-height: 28px;
+
+.content li:hover {
+	color: green;
+	font-weight: bold;
+	-webkit-transition: all 400ms;
 }
+
 li {
+	line-height: 2;
 	list-style: none;
 }
+
 footer {
+	position: relative;
 	text-align: center;
 	word-spacing: 5px;
-	color: grey;
+	color: #B5B5B5;
+	text-decoration: none;
+	clear: both;
+	z-index: 10;
+	height: 3em;
+	margin-top: 50em;
 }
-@media (max-width: 992px ) {
-	.content {
-		position: absolute;
-		top: -60px;
-		left: -190px;
-	}
+
+footer a {
+	color: inherit;
 }
-@media (max-width: 850px ) {
-	body {
-		width: 100%;
-	}
-	.deskmobile {
-		margin-left: -50px;
-	}
-	#container .sologram {
-		padding: 0 20px 0 0;
-	}
-	#container .sign1 {
-		margin: -20px 10px;
-	}
-	#container .sign2 {
-		padding: 10px;
-	}
-	.content {
-		position: absolute;
-		top: -70px;
-		left: -300px;
-	}
-	.content ul {
-		margin-top: -5px;
-		padding-left: 20px;
-	}
-	footer {
-		height: 500px;
-	}
+
+footer a:hover {
+	color: green;
+	font-weight: bold;
+	-webkit-transition: all 500ms;
 }
+
+/*Sign In Social Buttons*/
+.sosyal {
+  margin: 50px auto;
+  size: 100%;
+}
+.fb {
+  background-color: #2e4a88;
+  box-shadow: 0 4px 0 #1B3D82;
+  text-shadow: 0 -1px -1px #1B3D82;
+  
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  padding: 14px 80px;
+}
+.fb:hover {
+  background-color: #354F84;
+}
+.fb:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #1B3D82;
+}
+.twttr {
+  background-color: #008DDE;
+  box-shadow: 0 4px 0 #0078BD;
+  
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  padding: 14px 80px;
+}
+.twttr:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #0078BD;
+}
+.twttr:hover {
+  background-color: #1397D8;
+}
+.ggl {
+  background-color: #CC3622;
+  box-shadow: 0 4px 0 #BA2714;
+  
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  padding: 14px 80px;
+}
+.ggl:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #BA2714;
+}
+.ggl:hover {
+  background-color: #D04829;
+}
+
+/*Lower Social Buttons*/
+.social-buttons {
+  position: relative;
+  text-align: center;
+  clear: both;
+  margin-right: 15em;
+  width: 50%;
+  float: right;
+}
+ul.social-buttons img {
+  width: 50px; height: 50px; padding:0; border: 0; margin: 0;
+}
+.social-buttons li {
+	list-style-type: none; float:left; padding-left: 16px; margin: 0 0 0px 0;
+}
+.facebook, .twitter, .flickr, .youtube, .vimeo, .pinterest {
+	display: inline-block; background: url(http://www2.hull.ac.uk/pws4/templates/default/newCSS/img/social.png) no-repeat; position: relative; width: 32px; height: 32px;
+}
+.facebook span.image, .twitter span.image, .flickr span.image, .youtube span.image, .vimeo span.image, .pinterest span.image {
+	position: absolute; background: url(http://www2.hull.ac.uk/pws4/templates/default/newCSS/img/social.png) no-repeat; top: 0; left: 0; bottom: 0; right: 0; opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;
+} 
+.facebook:hover span.image, .twitter:hover span.image, .flickr:hover span.image, .youtube:hover span.image, .vimeo:hover span.image, .pinterest:hover span.image {
+	opacity: 1;
+} 
+/*Just to save space & brevity*/
+.facebook   {background-position: 0 -32px;}
+.twitter    {background-position: -32px -32px;}
+.flickr     {background-position: -64px -32px;}
+.youtube    {background-position: -96px -32px;}
+.vimeo      {background-position: -128px -32px;}
+.pinterest  {background-position: -160px -32px;}
+
+.facebook span.image   {background-position: 0 0;}
+.twitter span.image    {background-position: -32px 0;}
+.flickr span.image     {background-position: -64px 0;}
+.youtube span.image    {background-position: -96px 0;}
+.vimeo span.image      {background-position: -128px 0;}
+.pinterest span.image  {background-position: -160px 0;}
